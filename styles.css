@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  width: 375px;
+  height: 800px;
+  background: linear-gradient(150deg, #fff 0%, #fff4f4 84.51%);
+  text-align: center;
+ 
+}
+
+header {
+  padding: 1.94rem 15.19rem 2rem 2rem;
+}
+
+.image {
+  width: 374px;
+}
+
+.logo {
+  width: 100px;
+  height: 20.886px;
+}
+
+/* // im unsure about this text container padding top */
+
+.text-container {
+  padding: 3rem 2rem 5.75rem;
+}
+
+.text-container h1 {
+  color: #423a3a;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.625rem; /* 105% */
+  letter-spacing: 0.67656rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.text-container h1 span {
+  color: #ce9898;
+  font-weight: 300;
+}
+
+.text-container p {
+  color: #ce9898;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem; /* 157.143% */
+  margin-bottom: 2rem;
+}
+
+.text-container input,
+.text-container input.error {
+  width: 311px;
+  height: 48px;
+  border-radius: 28px;
+  color: #ce9898;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75rem; /* 200% */
+  padding: 0.69em 0 0.56em 1.5em;
+}
+
+.text-container input {
+  border: 1px solid #ce9898;
+  opacity: 0.5;
+}
+
+.text-container input.error {
+  color: #423a3a;
+  border: 2px solid #f96464;
+  opacity: 1;
+}
+
+.text-container input::placeholder {
+  color: #ce9898;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75rem; /* 200% */
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container button {
+  width: 64px;
+  height: 48px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.5);
+  border: none;
+  position: absolute;
+  top: 0;
+  right: -2%;
+  cursor: pointer;
+}
+
+.input-container button:active,
+.input-container button:hover {
+  background: #f8bfbf;
+}
+
+.input-container .arrow {
+  width: 8.836px;
+  height: 17.671px;
+  stroke-width: 2px;
+  stroke: #fff;
+}
+
+.error-message,
+.success-message {
+  display: none;
+  text-align: start;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.error-message {
+  color: #f96464;
+}
+
+.success-message {
+  color: #64f96c;
+}
+
+.icon-error {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: start;
+  }
+
+  .image {
+    width: 610px;
+    order: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .logo {
+    width: 158px;
+    height: 33px;
+  }
+
+  header {
+    padding: 4.06rem 69.81rem 8.51rem 10.31rem;
+  }
+
+  .text-container {
+    padding: 0 51.94rem 8.13rem 10.31rem;
+  }
+
+  .text-container h1,
+  .text-container span {
+    font-size: 4rem;
+    letter-spacing: 1.08256rem;
+  }
+
+  .text-container h1 {
+    line-height: 4.4375rem; /* 110.938% */
+    margin-bottom: 2rem;
+  }
+
+  .text-container span {
+    line-height: 4rem; /* 100% */
+  }
+
+  .text-container p {
+    font-size: 1rem;
+    line-height: 1.75rem; /* 175% */
+    margin-bottom: 2.5rem;
+  }
+
+  .text-container input,
+  .text-container input.error {
+    width: 445px;
+    height: 56px;
+    font-size: 1rem;
+    line-height: 1.75rem; /* 200% */
+    padding: 0.94em 0 0.81em 2em;
+  }
+
+  .input-container button {
+    width: 100px;
+    height: 56px;
+    top: 0;
+    right: -1%;
+  }
+  .error-message,
+  .success-message {
+    line-height: 1.75rem;
+  }
+}
